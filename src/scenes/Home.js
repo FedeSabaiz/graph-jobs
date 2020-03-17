@@ -1,17 +1,17 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
+import DisplayJobs from '../components/DisplayJobs';
+
 const Home = ({navigation}) => {
     return (
         <>
             <View>
                 <Text>
-                    Desde Home
+                    Los siguientes empleos involucran GraphQL
                 </Text>
-                <Button
-                    title="Go to Details"
-                    onPress={() => navigation.navigate('Jobs')}
-                />
+               
+                <DisplayJobs navigation={navigation} />
             </View>
         </>
     );
